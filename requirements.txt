@@ -1,0 +1,14 @@
+ultralytics>=8.0.0
+roboflow
+opencv-python-headless
+matplotlib
+seaborn
+numpy
+torch>=2.0.0
+torchvision>=0.15.0
+tqdm
+pandas
+pillow
+fastapi
+uvicorn
+python-multipart

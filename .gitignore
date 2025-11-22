@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environnement
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs temporaires
+temp_videos/
+outputs/
+
+# Node modules (frontend)
+web-app/node_modules/
+web-app/dist/
+
+# Logs
+*.log
+logs/
+runs/
+
+# Ne PAS ignorer le modèle (important pour déploiement)
+# !models/yolo/best.pt
+# !models/yolo/best.onnx
