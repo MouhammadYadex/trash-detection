@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
 
 # Copier requirements
 COPY requirements.txt .
+# Installer torch et torchvision CUDA 11.8
+RUN pip install --no-cache-dir torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copier le code
