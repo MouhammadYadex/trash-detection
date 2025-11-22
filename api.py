@@ -29,6 +29,7 @@ async def load_model():
     try:
         if os.path.exists(MODEL_PATH):
             model = YOLO(MODEL_PATH)
+            model.to('cpu')
             print(f"✅ Modèle chargé: {MODEL_PATH}")
         else:
             raise FileNotFoundError(f"Modèle non trouvé: {MODEL_PATH}")
